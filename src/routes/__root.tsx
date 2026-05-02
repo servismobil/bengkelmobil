@@ -4,13 +4,13 @@ import '../styles.css'
 const schemaMarkup = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  '@id': 'https://bengkelpaggilan.com',
-  name: 'BengkelPanggil – Bengkel Mobil Panggilan',
-  image: 'https://bengkelpaggilan.com/logo.png',
+  '@id': 'https://bengkelmobil.netlify.app/',
+  name: 'BengkelMobilPanggilan – Bengkel Mobil Panggilan',
+  image: 'https://bengkelmobil.netlify.app/logo.png',
   description:
     'Bengkel mobil panggilan profesional melayani area Jakarta, Tangerang, Bekasi, dan Depok. Teknisi berpengalaman datang ke lokasi Anda dalam 30 menit.',
   url: 'https://bengkelpaggilan.com',
-  telephone: '+62-812-3456-7890',
+  telephone: '+62-85199558339',
   priceRange: 'Rp 150.000 – Rp 2.000.000',
   currenciesAccepted: 'IDR',
   paymentAccepted: 'Cash, Transfer Bank, QRIS',
@@ -89,7 +89,7 @@ const faqSchema = {
       name: 'Berapa biaya panggilan teknisi ke lokasi?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Biaya kunjungan mulai Rp 50.000 untuk area dalam kota. Biaya ini sudah mencakup diagnosa awal kendaraan. Estimasi biaya perbaikan diberikan sebelum pekerjaan dimulai, tanpa biaya tersembunyi.',
+        text: 'Biaya kunjungan mulai Rp 150.000 untuk area dalam kota. Biaya ini sudah mencakup diagnosa awal kendaraan. Estimasi biaya perbaikan diberikan sebelum pekerjaan dimulai, tanpa biaya tersembunyi.',
       },
     },
     {
