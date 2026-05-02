@@ -237,7 +237,7 @@ function BengkelPanggil() {
       a: 'Teknisi kami menargetkan tiba dalam 30–60 menit setelah pemesanan terkonfirmasi, tergantung lokasi dan kondisi lalu lintas di area Jakarta, Tangerang, Bekasi, atau Depok. Untuk kondisi darurat, kami prioritaskan kecepatanrespons.',
     },
     {
-      q: 'Apakah bengkel panggilan ini tersedia 24 jam?',
+      q: 'Apakah bengkel mobil panggilan ini tersedia 24 jam?',
       a: 'Ya, kami beroperasi 24 jam sehari, 7 hari seminggu termasuk hari libur. Tim on-call kami siap merespons kapan saja, termasuk dini hari saat kendaraan Anda mogok di jalan.',
     },
     {
@@ -253,7 +253,7 @@ function BengkelPanggil() {
       a: 'Kami menggunakan spare part original (OEM) atau aftermarket berkualitas tinggi sesuai pilihan dan anggaran pelanggan. Semua part dilengkapi garansi resmi dan struk pembelian. Kami tidak pernah menggunakan spare part palsu atau KW.',
     },
     {
-      q: 'Bagaimana cara memesan layanan bengkel panggilan?',
+      q: 'Bagaimana cara memesan layanan bengkel mobil panggilan?',
       a: 'Cukup hubungi kami via WhatsApp atau telepon. Beritahu lokasi, jenis kendaraan, dan masalah yang dialami. Tim kami akan konfirmasi ketersediaan teknisi dan estimasi waktu kedatangan dalam hitungan menit.',
     },
   ]
@@ -262,13 +262,13 @@ function BengkelPanggil() {
     <div style={{ minHeight: '100vh' }}>
       {/* ── Navbar ─────────────────────────────────────────── */}
       <nav className="nav" role="navigation" aria-label="Navigasi utama">
-        <a href="/" className="nav-logo" aria-label="BengkelPanggil - Beranda">
+        <a href="/" className="nav-logo" aria-label="Bengkel Mobil Panggilan - Beranda">
           <span className="nav-logo-icon" aria-hidden="true">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0f0e0e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
             </svg>
           </span>
-          Bengkel Mobil Panggil
+          Bengkel Mobil Panggilan
         </a>
         <ul className="nav-links">
           <li><a href="#layanan">Layanan</a></li>
@@ -562,7 +562,7 @@ function BengkelPanggil() {
             <div className="testimonial-card featured reveal" role="listitem">
               <StarRating count={5} />
               <p className="testimonial-text">
-                "Mobil saya mogok di Tol Dalam Kota pukul 9 malam. Dalam 45 menit teknisi BengkelPanggil sudah di lokasi. Masalah aki drop langsung diatasi di pinggir jalan. Harga sesuai estimasi, tidak ada biaya tambahan. Luar biasa responsif!"
+                "Mobil saya mogok di Tol Dalam Kota pukul 9 malam. Dalam 45 menit teknisi Bengkel Mobil Panggilan sudah di lokasi. Masalah aki drop langsung diatasi di pinggir jalan. Harga sesuai estimasi, tidak ada biaya tambahan. Luar biasa responsif!"
               </p>
               <div className="testimonial-author">
                 <div className="author-avatar" style={{ background: '#f97316' }}>RH</div>
@@ -595,7 +595,7 @@ function BengkelPanggil() {
               <div className="testimonial-card reveal reveal-delay-2" role="listitem">
                 <StarRating count={5} />
                 <p className="testimonial-text">
-                  "AC mobil tidak dingin, langsung WA BengkelPanggil. Teknisi datang ke kantor saya di Bekasi, isi freon + servis evap. Sekarang AC dingin lagi. Recommended!"
+                  "AC mobil tidak dingin, langsung WA Bengkel Mobil Panggilan. Teknisi datang ke kantor saya di Bekasi, isi freon + servis evap. Sekarang AC dingin lagi. Recommended!"
                 </p>
                 <div className="testimonial-author">
                   <div className="author-avatar" style={{ background: '#22c55e' }}>AP</div>
@@ -629,7 +629,7 @@ function BengkelPanggil() {
               <div className="testimonial-card reveal reveal-delay-2" role="listitem">
                 <StarRating count={5} />
                 <p className="testimonial-text">
-                  "Pakai BengkelPanggil sudah 3x untuk servis berkala. Harga konsisten, kualitas bagus, dan teknisi selalu on-time. Sudah jadi langganan tetap saya."
+                  "Pakai Bengkel Mobil Panggilan sudah 3x untuk servis berkala. Harga konsisten, kualitas bagus, dan teknisi selalu on-time. Sudah jadi langganan tetap saya."
                 </p>
                 <div className="testimonial-author">
                   <div className="author-avatar" style={{ background: '#ef4444' }}>BK</div>
@@ -733,7 +733,7 @@ function BengkelPanggil() {
             Kendaraan Bermasalah?<br /><em>Kami Datang</em> ke Lokasi Anda
           </h2>
           <p>
-            Jangan tunggu sampai mogok total. Hubungi BengkelPanggil sekarang — teknisi kami siap meluncur ke lokasi Anda di Jakarta, Tangerang, Bekasi, dan Depok.
+            Jangan tunggu sampai mogok total. Hubungi Bengkel Mobil Panggilan sekarang — teknisi kami siap meluncur ke lokasi Anda di Jakarta, Tangerang, Bekasi, dan Depok.
           </p>
           <div className="cta-buttons">
             <a href= className="btn-wa btn-wa-lg" target="_blank" rel="noopener noreferrer">
@@ -752,13 +752,13 @@ function BengkelPanggil() {
       {/* ── Footer ─────────────────────────────────────────── */}
       <footer className="footer" role="contentinfo">
         <div>
-          <a href="/" className="nav-logo" style={{ marginBottom: 4 }} aria-label="BengkelPanggil">
+          <a href="https://montirmotor.com/mobil" className="nav-logo" style={{ marginBottom: 4 }} aria-label="BengkelMobilPanggilan">
             <span className="nav-logo-icon" aria-hidden="true">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0f0e0e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
               </svg>
             </span>
-            Bengkel Mobil Panggil
+            Bengkel Mobil Panggilan
           </a>
           <div className="footer-copy">Bengkel Mobil Panggilan Profesional · Jakarta, Tangerang, Bekasi, Depok</div>
         </div>
@@ -770,7 +770,7 @@ function BengkelPanggil() {
             WhatsApp
           </a>
         </div>
-        <div className="footer-copy">&copy; {new Date().getFullYear()} Bengkel Mobil Panggil.</div>
+        <div className="footer-copy">&copy; {new Date().getFullYear()} Bengkel Mobil Panggilan</div>
       </footer>
     </div>
   )
