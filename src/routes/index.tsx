@@ -210,8 +210,8 @@ function BengkelPanggil() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
   const observerRef = useRef<IntersectionObserver | null>(null)
 
-  const WA_NUMBER = '6281234567890'
-  const WA_MSG = encodeURIComponent('Halo, saya butuh bantuan bengkel panggilan. Bisa tolong datang ke lokasi saya?')
+  const WA_NUMBER = '6285199558339'
+  const WA_MSG = encodeURIComponent('Halo, butuh bantuan bengkel mobil panggilan. Bisa datang ke lokasi?')
   const WA_URL = `https://wa.me/${WA_NUMBER}?text=${WA_MSG}`
 
   useEffect(() => {
@@ -238,15 +238,15 @@ function BengkelPanggil() {
     },
     {
       q: 'Apakah bengkel panggilan ini tersedia 24 jam?',
-      a: 'Ya, kami beroperasi 24 jam sehari, 7 hari seminggu termasuk hari libur nasional. Tim on-call kami siap merespons kapan saja, termasuk dini hari saat kendaraan Anda mogok di jalan.',
+      a: 'Ya, kami beroperasi 24 jam sehari, 7 hari seminggu termasuk hari libur. Tim on-call kami siap merespons kapan saja, termasuk dini hari saat kendaraan Anda mogok di jalan.',
     },
     {
       q: 'Area mana saja yang dilayani?',
-      a: 'Kami melayani seluruh wilayah Jakarta (Pusat, Utara, Selatan, Timur, Barat), Tangerang (kota dan kabupaten termasuk Serpong, BSD, Ciledug), Bekasi (kota dan kabupaten termasuk Cikarang), serta Depok.',
+      a: 'Kami melayani seluruh wilayah Jakarta (Pusat, Utara, Selatan, Timur, Barat), Tangerang (kota dan selatan termasuk Serpong, BSD, Ciledug), serta Depok.',
     },
     {
       q: 'Berapa biaya panggilan dan bagaimana estimasi harga?',
-      a: 'Biaya kunjungan mulai Rp 50.000 untuk area dalam kota. Setelah diagnosa awal, teknisi memberikan estimasi biaya perbaikan secara transparan sebelum pekerjaan dimulai. Tidak ada biaya tersembunyi — Anda menyetujui harga sebelum kami mulai bekerja.',
+      a: 'Biaya kunjungan mulai Rp 150.000 untuk area dalam kota. Setelah diagnosa awal, teknisi memberikan estimasi biaya perbaikan secara transparan sebelum pekerjaan dimulai. Tidak ada biaya tersembunyi — Anda menyetujui harga sebelum kami mulai bekerja.',
     },
     {
       q: 'Apakah spare part yang digunakan original/asli?',
@@ -268,7 +268,7 @@ function BengkelPanggil() {
               <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
             </svg>
           </span>
-          BengkelPanggil
+          Bengkel Mobil Panggil
         </a>
         <ul className="nav-links">
           <li><a href="#layanan">Layanan</a></li>
@@ -307,14 +307,14 @@ function BengkelPanggil() {
             <a href={WA_URL} className="btn-wa btn-wa-lg" target="_blank" rel="noopener noreferrer">
               <IconWhatsApp size={18} /> Chat WhatsApp
             </a>
-            <a href="tel:+6281234567890" className="btn-outline">
+            <a href={WA_URL} className="btn-outline">
               <IconPhone size={16} /> Telp Langsung
             </a>
           </div>
 
           <div className="hero-stats" role="list" aria-label="Statistik layanan">
             <div role="listitem">
-              <div className="hero-stat-num">312<span className="amber">+</span></div>
+              <div className="hero-stat-num">10<span className="amber">+</span></div>
               <div className="hero-stat-label">Ulasan bintang 5</div>
             </div>
             <div role="listitem">
@@ -322,7 +322,7 @@ function BengkelPanggil() {
               <div className="hero-stat-label">Rating rata-rata</div>
             </div>
             <div role="listitem">
-              <div className="hero-stat-num">8<span className="amber">th</span></div>
+              <div className="hero-stat-num">2<span className="amber">th</span></div>
               <div className="hero-stat-label">Tahun pengalaman</div>
             </div>
           </div>
@@ -338,7 +338,7 @@ function BengkelPanggil() {
           <div className="hero-coverage-pill" role="complementary" aria-label="Area layanan">
             <div className="hero-coverage-title">Area Layanan</div>
             <div className="hero-coverage-tags">
-              {['Jakarta', 'Tangerang', 'Bekasi', 'Depok'].map(area => (
+              {['Jakarta', 'Tangerang', 'Depok'].map(area => (
                 <div key={area} className="hero-coverage-tag">{area}</div>
               ))}
             </div>
@@ -386,7 +386,7 @@ function BengkelPanggil() {
             <ServiceCard
               icon={<IconTow size={24} />}
               title="Mobil Mogok Darurat"
-              desc="Kendaraan mogok tiba-tiba di jalan? Kami respons dalam 30 menit. Termasuk layanan jumper aki, tambal ban, kehabisan bahan bakar, dan penanganan darurat lainnya."
+              desc="Kendaraan mogok tiba-tiba di jalan? Kami respons dalam 60 menit. Termasuk layanan jumper aki, tambal ban, kehabisan bahan bakar, dan penanganan darurat lainnya."
               delay="reveal-delay-2"
             />
             <ServiceCard
@@ -416,13 +416,13 @@ function BengkelPanggil() {
                 {[
                   {
                     num: '01',
-                    title: 'Respons 30 Menit',
-                    desc: 'Teknisi terdekat dikirim dalam 30 menit setelah konfirmasi. Kami pantau jalur lalu lintas real-time untuk estimasi akurat.',
+                    title: 'Respons 60 Menit',
+                    desc: 'Teknisi terdekat dikirim dalam 60 menit setelah konfirmasi. Kami pantau jalur lalu lintas real-time untuk estimasi akurat.',
                   },
                   {
                     num: '02',
-                    title: 'Teknisi Bersertifikat',
-                    desc: 'Semua teknisi kami memiliki sertifikasi Otomotif dan pengalaman minimal 5 tahun. Terlatih untuk kendaraan Jepang, Korea, dan Eropa.',
+                    title: 'Teknisi Berpengalaman',
+                    desc: 'Semua teknisi kami memiliki pengalaman Otomotif lebih dari 5 tahun. Terlatih untuk kendaraan Jepang, Korea, dan Eropa.',
                   },
                   {
                     num: '03',
@@ -437,7 +437,7 @@ function BengkelPanggil() {
                   {
                     num: '05',
                     title: 'Layanan 24 Jam / 7 Hari',
-                    desc: 'Tersedia setiap hari tanpa terkecuali, termasuk hari libur nasional dan akhir pekan. Darurat tengah malam pun kami layani.',
+                    desc: 'Tersedia setiap hari, termasuk hari libur dan akhir pekan. Darurat tengah malam pun kami standby.',
                   },
                 ].map(({ num, title, desc }) => (
                   <div key={num} className="advantage-item reveal" role="listitem">
@@ -554,7 +554,7 @@ function BengkelPanggil() {
           <div className="section-header">
             <div className="section-label">Kata Mereka</div>
             <h2 className="section-title" id="testimoni-title">
-              Dipercaya Ribuan<br />Pemilik Kendaraan
+              Dipercaya Oleh<br />Pemilik Kendaraan
             </h2>
           </div>
 
@@ -562,12 +562,12 @@ function BengkelPanggil() {
             <div className="testimonial-card featured reveal" role="listitem">
               <StarRating count={5} />
               <p className="testimonial-text">
-                "Mobil saya mogok di Tol Dalam Kota pukul 11 malam. Dalam 25 menit teknisi BengkelPanggil sudah di lokasi. Masalah aki drop langsung diatasi di pinggir jalan. Harga sesuai estimasi, tidak ada biaya tambahan. Luar biasa responsif!"
+                "Mobil saya mogok di Tol Dalam Kota pukul 9 malam. Dalam 45 menit teknisi BengkelPanggil sudah di lokasi. Masalah aki drop langsung diatasi di pinggir jalan. Harga sesuai estimasi, tidak ada biaya tambahan. Luar biasa responsif!"
               </p>
               <div className="testimonial-author">
                 <div className="author-avatar" style={{ background: '#f97316' }}>RH</div>
                 <div>
-                  <div className="author-name">Reza Haryanto</div>
+                  <div className="author-name">Bapak Haryanto</div>
                   <div className="author-location">
                     <IconLocation size={12} style={{ display: 'inline', verticalAlign: 'middle' }} /> Kuningan, Jakarta Selatan
                   </div>
@@ -584,7 +584,7 @@ function BengkelPanggil() {
                 <div className="testimonial-author">
                   <div className="author-avatar" style={{ background: '#3b82f6' }}>DW</div>
                   <div>
-                    <div className="author-name">Dewi Wulandari</div>
+                    <div className="author-name">Ibu Wulandari</div>
                     <div className="author-location">
                       <IconLocation size={12} style={{ display: 'inline', verticalAlign: 'middle' }} /> BSD, Tangerang Selatan
                     </div>
@@ -600,9 +600,9 @@ function BengkelPanggil() {
                 <div className="testimonial-author">
                   <div className="author-avatar" style={{ background: '#22c55e' }}>AP</div>
                   <div>
-                    <div className="author-name">Adi Pratama</div>
+                    <div className="author-name">Bapak Pratama</div>
                     <div className="author-location">
-                      <IconLocation size={12} style={{ display: 'inline', verticalAlign: 'middle' }} /> Harapan Indah, Bekasi
+                      <IconLocation size={12} style={{ display: 'inline', verticalAlign: 'middle' }} /> Pasar Minggu, Jakarta
                     </div>
                   </div>
                 </div>
@@ -618,7 +618,7 @@ function BengkelPanggil() {
                 <div className="testimonial-author">
                   <div className="author-avatar" style={{ background: '#8b5cf6' }}>SR</div>
                   <div>
-                    <div className="author-name">Siti Rahayu</div>
+                    <div className="author-name">Ibu Rahayu</div>
                     <div className="author-location">
                       <IconLocation size={12} style={{ display: 'inline', verticalAlign: 'middle' }} /> Margonda, Depok
                     </div>
@@ -634,7 +634,7 @@ function BengkelPanggil() {
                 <div className="testimonial-author">
                   <div className="author-avatar" style={{ background: '#ef4444' }}>BK</div>
                   <div>
-                    <div className="author-name">Budi Kurniawan</div>
+                    <div className="author-name">Bapak Kurniawan</div>
                     <div className="author-location">
                       <IconLocation size={12} style={{ display: 'inline', verticalAlign: 'middle' }} /> Cibubur, Jakarta Timur
                     </div>
@@ -736,11 +736,11 @@ function BengkelPanggil() {
             Jangan tunggu sampai mogok total. Hubungi BengkelPanggil sekarang — teknisi kami siap meluncur ke lokasi Anda di Jakarta, Tangerang, Bekasi, dan Depok.
           </p>
           <div className="cta-buttons">
-            <a href={WA_URL} className="btn-wa btn-wa-lg" target="_blank" rel="noopener noreferrer">
+            <a href= className="btn-wa btn-wa-lg" target="_blank" rel="noopener noreferrer">
               <IconWhatsApp size={20} /> Chat WhatsApp Sekarang
             </a>
-            <a href="tel:+6281234567890" className="btn-outline">
-              <IconPhone size={18} /> +62 812-3456-7890
+            <a href={WA_URL} className="btn-outline">
+              <IconPhone size={18} /> +{WA_NUMBER}
             </a>
           </div>
           <p style={{ fontSize: '0.8rem', color: 'var(--text-dim)', marginTop: '1.5rem' }}>
@@ -758,7 +758,7 @@ function BengkelPanggil() {
                 <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
               </svg>
             </span>
-            BengkelPanggil
+            Bengkel Mobil Panggil
           </a>
           <div className="footer-copy">Bengkel Mobil Panggilan Profesional · Jakarta, Tangerang, Bekasi, Depok</div>
         </div>
@@ -770,7 +770,7 @@ function BengkelPanggil() {
             WhatsApp
           </a>
         </div>
-        <div className="footer-copy">&copy; {new Date().getFullYear()} BengkelPanggil. Hak Cipta Dilindungi.</div>
+        <div className="footer-copy">&copy; {new Date().getFullYear()} Bengkel Mobil Panggil.</div>
       </footer>
     </div>
   )
